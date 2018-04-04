@@ -19,7 +19,7 @@ for(var i = 0; i < squares.length; i++){
             changeColors(clickedColor);
             h1.style.backgroundColor = clickedColor;
         }else{
-             this.style.background = "#232323";
+             this.style.background = "rgba(34, 34, 34, 0)";
              messageDisplay.textContent = "Try Again";
             }
        
