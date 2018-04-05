@@ -1,6 +1,8 @@
 body{
      background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/colortheory.jpg");
-    background-size:cover;
+     margin:0;
+     font-family: "Helvetica", sans-serif;
+     background-size:cover;
 }
 .square{
     width:30%;
@@ -8,16 +10,35 @@ body{
     padding-bottom:30%;
     float:left;
     margin:1.66%;
+    border-radius:50%;
+
+    -webkit-transition:background 0.5s;
+
+    transition:background 0.5s;
 }
 
 #container{
     max-width: 600px;
-    margin:0 auto;
+    margin:50px auto;
 }
 h1{
+    text-align:center;
+    line-height:1.1;
+    font-weight:normal;
+    background:#3f1490;
     color:white;
+    margin:0;
+    text-transform:uppercase;
+    padding: 20px 0;
 }
 
+#colorDisplay {
+    font-size: 200%;
+}
+#message{
+    display:inline-block;
+    width:20%;
+}
 
 #stripe{
     background:white;
@@ -28,4 +49,26 @@ h1{
 
 .selected{
     background:blue;
+    color:white;
+}
+button{
+    border:none;
+    background:none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: #3f1490;
+    letter-spacing: 1px;
+    font-size: inherit;
+   
+    -webkit-transition: all .2s ease-in-out;
+   
+    transition: all .2s ease-in-out;
+    outline: none;
+}
+
+button:hover{
+    color:white;
+    background:#3f1490;
+
 }
